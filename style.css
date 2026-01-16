@@ -163,6 +163,7 @@ header {
 .server {
     position: relative
 }
+/* style white server selection bar */
 .server::before {
     content: "";
     position: absolute;
@@ -177,8 +178,15 @@ header {
 .server:focus::before {
     opacity:1;
 }
-.server:focus .server-icon,
-.server:focus ,.direct-messages {
+/* focus on the first list item */
+.server:focus .direct-messages {
     transform: scale(1.1);
     transition: 0.2s ease;
+}
+/* hover on server icons */
+.server:hover .server-icon {
+    transform: scale(1.1);
+}
+.server:hover::before {
+    opacity: 1;
 }
