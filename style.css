@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 512px;
+    font-family: "dm sans";
+}
+.wrapper {
+    display: flex;
+    height:100vh;
+    flex-grow: 2;
+    background-color:#222225 ;
+    padding-top: 4px;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:transparent ;
+    width: 60px
+
+}
+/* Make  server icons circular */
+.server-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;     
+    object-fit: cover;
+}
+/* make profile-pic circular */
+.profile-pic {
+    width: 45px;
+    height: 50px;
+    border-radius: 50%;     
+    object-fit: cover;
+}
+.chat {
+    display: flex;
+    
+}
+.chats-wrapper {
+    background-color: #494658;
+    border-top-left-radius: 12px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+li {
+    text-decoration: none;
+}
+
+/* style footer */
+footer {
+    display: flex;
+    margin-top: auto;
+    justify-content: space-evenly;
+    max-height: 100px;
+}
+footer button {
+    font-size: larger ;
+     ;
+}
+footer button:last-of-type {
+    
+}
+/* style header */
+header button.search {
+    font-size: larger;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #5e5978;
+    border: none;
+    color: white;
+    
+}
+header button.add-friends {
+    text-align: center;
+    border-radius: 16px;
+    width: 230px;
+    height: 25px;
+    background-color: #5e5978;
+    color: white;
+    border: none;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    color: white;
+    
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
