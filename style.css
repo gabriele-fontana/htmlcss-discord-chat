@@ -186,7 +186,13 @@ header {
 /* hover on server icons */
 .server:hover .server-icon {
     transform: scale(1.1);
+    transition: 0.2s ease;
 }
-.server:hover::before {
+/* select from the second child to the last */
+.server:nth-child(n+2):hover::before {
     opacity: 1;
+}
+/* add chat hover */
+ul .chat:hover{
+    background-color: #80808080;
 }
