@@ -1,4 +1,4 @@
-Esercizio 16.01.2026
+# Esercizio 16.01.2026
 
 
 Proviamo a replicare il layout della chat di Discord in versione mobile! 
@@ -6,8 +6,8 @@ Questo Layout è composto da una sidebar coi diversi server, un footer e una sez
 
 
 
-<!-- bonus -->
-I
+# bonus 
+
 
 Sulla sidebar, appare una barra laterale bianca su uno degli elementi, indicando il server attuale (ovviamente a piacimento)
 
@@ -17,3 +17,12 @@ Al passaggio del mouse i box delle chat vengono evidenziati con un grigio più c
 Se sono presenti molti contatti, la scrollbar appare solo sulla sezione dedicata all lista delle chat.
 
 Aggiungere un bottone rapido di nuova chat in basso a destra in posizione fissa.
+
+# colors
+#5865F2
+#FEE75C stand-by
+#EB459E
+#ED4245
+#202225 sfondo sidebar
+#2f3130 sfondo chat
+#99aab5

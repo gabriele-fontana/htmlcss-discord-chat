@@ -11,9 +11,10 @@ body{
     display: flex;
     height:100vh;
     flex-grow: 2;
-    background-color:#222225 ;
+    background-color:#202225 ;
     padding-top: 4px;
     overflow: hidden;
+    position: relative;
 }
 .sidebar {
     display: flex;
@@ -60,7 +61,7 @@ body{
     
 }
 .chats-wrapper {
-    background-color: #494658;
+    background-color: #2f3130;
     border-top-left-radius: 12px;
     flex-grow: 1;
     overflow-y: auto;
@@ -78,6 +79,7 @@ footer {
     justify-content: space-evenly;
     min-height: 70px;
     background-color: #5e5978;
+    
 }
 footer button {
     
@@ -132,12 +134,14 @@ header {
     display: flex;
     justify-content: space-around;
 }
+
 /* style chats previews */
 .chats-wrapper ul li {
     color: lightgray;
     padding: 8px;
     display: flex;
     justify-content: space-between;
+    border-radius: .75rem;
     /* align-items: center; */
 }
 .chat-info {
@@ -146,16 +150,28 @@ header {
 }
 /* status cifrcle */
 .chat .chat-info i {
-    color: forestgreen;
+    
     position: absolute;
     bottom: -4px;
     right: 0px;
     border-radius: 50%;
     background-color: #494658;
     border: solid 3px #494658;
-    
     font-size: smaller;
 }
+/* selector status circle online */
+.chat-info-wrapper.online .bi-circle-fill {
+    color: #57F287;
+}
+/* selector status circle offline */
+.chat-info-wrapper.offline .bi-circle-fill {
+    color: #ED4245;
+}
+/* selector status circle away */
+.chat-info-wrapper.away .bi-circle-fill{
+    color: #E67E22;
+}
+
 .chat-info-wrapper {
     position: relative;
     
@@ -195,4 +211,31 @@ header {
 /* add chat hover */
 ul .chat:hover{
     background-color: #80808080;
+}
+.new-chat-btn {
+    position:absolute;
+    right: 30px;
+    bottom: 80px;
+
+    button{
+        width: 40px;
+        height: 40px;
+    }
+    i {
+        font-size: 30px;
+        color: whitesmoke;
+    }
+
+}
+.new-chat-btn button i:hover{
+    color: #5865F2;
+}
+
+/* add  "blurple" hover to every button in the header */
+.header-wrapper button:hover {
+    background-color:#5865F2 ;
+    border-color: #5865F2;
+}
+.chats-wrapper ul {
+    padding: 0 5px 5px;
 }
