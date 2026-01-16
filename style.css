@@ -19,7 +19,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-color:transparent ;
-    width: 60px
+    width: 75px
 
 }
 /* Make  server icons circular */
@@ -46,6 +46,7 @@ body{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 li {
     text-decoration: none;
@@ -56,14 +57,24 @@ footer {
     display: flex;
     margin-top: auto;
     justify-content: space-evenly;
-    max-height: 100px;
+    min-height: 70px;
+    background-color: #5e5978;
 }
 footer button {
     font-size: larger ;
-     ;
+    border: none;
+    background-color: transparent;
+    
 }
 footer button:last-of-type {
-    
+    width: 50px;
+    align-items: center;
+
+    img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 35px;
+    }
 }
 /* style header */
 header button.search {
@@ -88,7 +99,7 @@ header button.add-friends {
 header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: white;
     
 }
@@ -96,3 +107,4 @@ header {
     display: flex;
     justify-content: space-around;
 }
+/* style chats previews */
