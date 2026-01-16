@@ -13,13 +13,21 @@ body{
     flex-grow: 2;
     background-color:#222225 ;
     padding-top: 4px;
+    overflow: hidden;
 }
 .sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color:transparent ;
-    width: 75px
+    width: 75px;
+    
+}
+.app-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
 
 }
 /* Make  server icons circular */
@@ -28,6 +36,11 @@ body{
     height: 50px;
     border-radius: 50%;     
     object-fit: cover;
+}
+.direct-messages {
+    width: 50px;
+    
+    
 }
 /* make profile-pic circular */
 .profile-pic {
@@ -44,9 +57,10 @@ body{
     background-color: #494658;
     border-top-left-radius: 12px;
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+    overflow-y: auto;
+    h1{
+        margin-left: 20px;
+    }
 }
 li {
     text-decoration: none;
@@ -55,16 +69,21 @@ li {
 /* style footer */
 footer {
     display: flex;
-    margin-top: auto;
     justify-content: space-evenly;
     min-height: 70px;
     background-color: #5e5978;
 }
 footer button {
-    font-size: larger ;
+    
     border: none;
     background-color: transparent;
-    
+    color: white;
+    i{
+        font-size: 24px;
+    }
+    div{
+        font-size: 10px;
+    }
 }
 footer button:last-of-type {
     width: 50px;
@@ -99,7 +118,7 @@ header button.add-friends {
 header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     color: white;
     
 }
@@ -108,3 +127,14 @@ header {
     justify-content: space-around;
 }
 /* style chats previews */
+.chats-wrapper ul li {
+    color: lightgray;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.chat-info {
+    display: flex;
+    gap: 10px;
+}
