@@ -21,6 +21,9 @@ body{
     align-items: center;
     background-color:transparent ;
     width: 75px;
+    ul li {
+        text-decoration: none;
+    }
     
 }
 .app-content {
